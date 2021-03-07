@@ -1,0 +1,141 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-07T15:06:00.611Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4921000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.BookingLoginStep_PF.browserSetup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3535000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.RegisterStep_PF.browserSetup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Check registration function",
+        "description": "",
+        "id": "test-registration-function;check-registration-function;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1293000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.RegisterStep_PF.teardown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1749000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.BookingLoginStep_PF.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7399000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is navigated to registeration page",
+            "match": {
+              "location": "StepDefinition.RegisterStep_PF.user_is_navigated_to_registeration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 366000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides with admin12345@163.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin12345@163.com",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinition.RegisterStep_PF.user_provides_with_email(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1168000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user provide with Shanghai@0623",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shanghai@0623",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinition.RegisterStep_PF.user_provides_with_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate the welcome page",
+            "match": {
+              "location": "StepDefinition.RegisterStep_PF.validate_the_welcome_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Register"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Test registration function",
+    "description": "",
+    "id": "test-registration-function",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Register.feature",
+    "tags": [
+      {
+        "name": "@Register",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
